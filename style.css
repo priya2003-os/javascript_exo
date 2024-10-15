@@ -1,0 +1,41 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+@keyframes rotateBox{
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: scale(1.35);
+    }
+    100% {
+        transform: translateX(70%);
+    }
+}
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    width: 100vw;
+    height: 100vh;
+    transition: all;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-size: 30px;
+}
+
+.box:hover {
+    animation: rotateBox 2s;
+}
